@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Cooklove</title>
+</head>
+
+<body class="article-pg">
+    <header class="mt-0 pt-0">
+        <div class="bg-cover clearfix pt-3">
+            <h2 class="logo">Cooklove</h2>
+            <nav class="nav nav-fill mx-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://twitter.com/fh5co" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-rss"></i></a>
+                </li>
+            </nav>
+
+
+            <input type="text" id="nav-search" class="nav-search mx-auto" name="" class="form-control">
+            <div class="ml-0 mr-0 pb-1">
+                <nav class="navbar navbar-expand-md">
+
+                    <button class="navbar-toggler ml-auto" data-target="#my-nav" data-toggle="collapse"
+                        aria-controls="my-nav" aria-expanded="false" onclick="myFunction(this)"
+                        aria-label="Toggle navigation">
+                        <span class="bar1"></span> <span class="bar2"></span> <span class="bar3"></span>
+                    </button>
+                    <div id="my-nav" class="collapse navbar-collapse">
+                        <ul class="navbar-nav mx-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Popular Recipes</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nutrition Articles</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Videos of Cooking</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">History View</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Communities</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">About Us</a>
+                            </li>
+                            <li class="nav-item">
+                                <form action="" method="POST">
+                                    <div class="input-group mt-0 mx-auto" style="width:16px;">
+
+                                        <div class="">
+                                            <img src="assets/images/search-icon.png" id="toggle-search"
+                                                class="ml-2 toggle-search" alt="search icon">
+                                        </div>
+                                    </div>
+                                </form>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <ul class="nav nav-fill mx-auto breadc pb-3">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li><img src="assets/images/star-shape.png" class="mt-2" alt=""></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Article</a>
+                </li>
+            </ul>
+        </div>
+
+
+
+    </header>
+
+
+    <div class="container-fluid ar-content">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-9 pr-5">
+                    <div class="card ar-img-over">
+                        <img class="card-img" src="data:image/jpeg;base64,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" alt="">
+                        <div class="card-img-overlay">
+                            <a href="#" class="d-flex align-items-center justify-content-center"><img
+                                    src="assets/images/full-screen.png" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="row date-time mt-3">
+
+                        <div class="col text-white">
+                            <a href="#"> <i class="fas fa-retweet"></i> Share</a>
+                        </div>
+                        <div class="col text-right"><a href="#"> By Taryn Pire | Sep. 22, 2020 &nbsp; 6 <i
+                                    class="far fa-comments"></i></a></div>
+                    </div>
+
+                    <h2>Health Benefits of Eating Oats and Oatmeal</h2>
+                    <p>Of the endless food influencers and cooking videos that have graced our feeds over the years, 
+                        there are only a handful that continually (1) teach us something, (2) make us feel good and (3) inspire us to get our hands dirty and actually cook (even on a Monday night). 
+                        In fact, they are too good not to share with you. Presenting the 12 best cooking channels on YouTube, no matter your skill level.
+                    </p>
+
+                    <div class="media my-5">
+                        <div class="q-box d-flex align-items-center justify-content-center"><img
+                                src="assets/images/quote.png" alt=""></div>
+                        <div class="bbg media-body">
+                            <h5 class="mb-0">Here are 9 evidence-based health benefits of eating oats and oatmeal.</h5>
+
+                        </div>
+                    </div>
+
+                    <p>
+                        What Are Oats and Oatmeal?
+                        Oats are a whole-grain food, known scientifically as Avena sativa.
+
+                        Oat groats, the most intact and whole form of oats, take a long time to cook. For this reason, most people prefer rolled, crushed or steel-cut oats.
+
+                        Instant (quick) oats are the most highly processed variety. While they take the shortest time to cook, the texture may be mushy.
+
+                        Oats are commonly eaten for breakfast as oatmeal, which is made by boiling oats in water or milk. Oatmeal is often referred to as porridge.
+
+                        They’re also often included in muffins, granola bars, cookies and other baked goods. </p>
+
+                    <p> An article published in the American Journal of Clinical Nutrition concluded that a diet including plenty of whole-grains (such as oats or wholemeal bread) is just as effective as taking anti-hypertensive medication in lowering blood pressure.
+
+                        They found that three portions per day can”significantly reduce cardiovascular disease risk in middle-aged people mainly through blood pressure-lowering mechanisms.”
+                    </p>
+                    <h2 class="text-center fs-35 mt-5 pt-5 mb-0 pb-2">Related Articles</h2>
+                    <hr class="mt-0 pt-0" />
+                    <p class="text-center second-clr my-5">Nam liber tempor cum soluta nobis eleifend option congue
+                        nihil imperdiet doming id quod
+                        mazim placerat facer possim assum.</p>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img src="assets/images/ar-left.png" class="w-100" alt="">
+                            <p class="img-tag text-center">LIFESTYLE</p>
+                            <hr class="mt-0" />
+                            <h3 class="text-center">Inside a Surf Champion’s World</h3>
+
+                            <ul class="nav nav-fill mx-auto pb-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">By John Doe</a>
+                                </li>
+                                <li><span>.</span></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">10 Oct 2016</a>
+                                </li>
+                                <li><span>.</span></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">12 Comments</a>
+                                </li>
+
+
+                            </ul>
+                            <p class="second-clr text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                In laoreet, enim nec venenatis luctus, lectus dolor accumsan magna, non rhoncus.</p>
+
+                            <a href="#" class="btn text-uppercase text-center mx-auto">Read More</a>
+
+                        </div>
+                        <div class="col-md-6 mt-md-4">
+                            <img src="assets/images/ar-right.png" class="w-100" alt="">
+                            <p class="img-tag text-center">FASHION</p>
+                            <hr class="mt-0" />
+                            <h3 class="text-center">10 Places in France Every
+                                Woman Should Go</h3>
+
+                            <ul class="nav nav-fill mx-auto pb-3">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">By John Doe</a>
+                                </li>
+                                <li><span>.</span></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">10 Oct 2016</a>
+                                </li>
+                                <li><span>.</span></li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">12 Comments</a>
+                                </li>
+
+
+                            </ul>
+                            <p class="second-clr text-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                In laoreet, enim nec venenatis luctus, lectus dolor accumsan magna, non rhoncus.</p>
+
+                            <a href="#" class="btn text-uppercase text-center mx-auto">Read More</a>
+                        </div>
+                    </div>
+                    <div class="comment-section mt-5">
+                        <h3>3 Comments</h3>
+                        <hr class="ml-0" />
+                        <div class="media pt-5">
+                            <div class="card mr-4">
+                                <img src="assets/images/comment-user1.png" alt="" class="card-img">
+                                <div class="card-img-overlay">
+
+                                </div>
+                            </div>
+
+                            <div class="media-body">
+                                <div class="row">
+                                    <div class="col text-left">
+                                        <h4>John Deo</h4>
+                                    </div>
+                                    <div class="col text-right">
+                                        <p class="my-0"><span>Add 11 Oct 2016</span> <a href="#" class="ml-3">Reply</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et
+                                    tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices sit amet cursus
+                                    vitae, fermentum nec turpis.</p>
+                                <div class="media py-5 mt-5 both-border">
+                                    <div class="card mr-4">
+                                        <img src="assets/images/comment-user2.png" alt="" class="card-img">
+                                        <div class="card-img-overlay">
+
+                                        </div>
+                                    </div>
+                                    <div class="media-body">
+                                        <div class="row">
+                                            <div class="col text-left">
+                                                <h4>Jen Smith</h4>
+                                            </div>
+                                            <div class="col text-right">
+                                                <p class="my-0"><span>Add 11 Oct 2016</span> <a href="#"
+                                                        class="ml-3">Reply</a></p>
+                                            </div>
+                                        </div>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla
+                                            massa et tristique convallis. Class aptent taciti sociosqu ad litora
+                                            torquent per conubia nostra, per inceptos himenaeos. Suspendisse orci sem,
+                                            ultrices sit amet cursus vitae, fermentum nec turpis.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class="media py-5 bottom-border">
+                            <div class="card mr-4">
+                                <img src="assets/images/comment-user3.png" alt="" class="card-img">
+                                <div class="card-img-overlay">
+
+                                </div>
+                            </div>
+
+                            <div class="media-body">
+                                <div class="row">
+                                    <div class="col text-left">
+                                        <h4>John Deo</h4>
+                                    </div>
+                                    <div class="col text-right">
+                                        <p class="my-0"><span>Add 11 Oct 2016</span> <a href="#" class="ml-3">Reply</a>
+                                        </p>
+                                    </div>
+                                </div>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas fringilla massa et
+                                    tristique convallis. Class aptent taciti sociosqu ad litora torquent per conubia
+                                    nostra, per inceptos himenaeos. Suspendisse orci sem, ultrices sit amet cursus
+                                    vitae, fermentum nec turpis.</p>
+
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <div class="comment-form my-5 pt-5">
+                        <h3>Add Comments</h3>
+                        <hr class="ml-0" />
+                        <hr class="s-br" />
+                        <table class="table table-borderless mt-4">
+                            <tr>
+                                <td><input type="text" class="form-control" placeholder="Name" /></td>
+                                <td><input type="email" class="form-control" placeholder="Email" /> </td>
+                                <td><input type="url" class="form-control" placeholder="Website" /> </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><textarea class="form-control" placeholder="Your comment"></textarea>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="3"><button class="btn text-uppercase ml-auto d-block">Add Comment</button>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="col-lg-3 pl-0">
+                    <div class="sidebar">
+                        <h3 class="text-center text-white">Top Authors</h3>
+                        <hr class="bg-white" />
+
+                        <div class="owl-carousel owl-carousel4 owl-theme">
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="assets/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="assets/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="assets/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+
+                            <div>
+                                <div class="card pb-5"> <img class="card-img link-img rounded"
+                                        src="assets/images/carlla-willstons.jpg" alt="">
+                                </div>
+                                <h3 class="text-center mt-3 mb-0">Carlla Willstons</h3>
+                                <p class="text-center mt-1 third-clr">Reporter</p>
+                            </div>
+                        </div>
+
+
+                        <div class="owl-carousel bg-gray owl-carousel5 owl-theme my-5 pb-5">
+                            <div>
+                                <div class="card bg-gray">
+                                    <h3 class="text-center mt-3 mb-0">Twitter Posts</h3>
+                                    <hr class="mx-auto" />
+                                    <p class="text-center mt-1">To take a trivial example, which of us ever undertakes
+                                        laborious physical exercise, some advantage from it? </p>
+                                    <p class="text-center my-1"><span>14 minutes ago</span></p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="card bg-gray">
+                                    <h3 class="text-center mt-3 mb-0">Twitter Posts</h3>
+                                    <hr class="mx-auto" />
+                                    <p class="text-center mt-1">To take a trivial example, which of us ever undertakes
+                                        laborious physical exercise, some advantage from it? </p>
+                                    <p class="text-center my-1"><span>14 minutes ago</span></p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="card bg-gray">
+                                    <h3 class="text-center mt-3 mb-0">Twitter Posts</h3>
+                                    <hr class="mx-auto" />
+                                    <p class="text-center mt-1">To take a trivial example, which of us ever undertakes
+                                        laborious physical exercise, some advantage from it? </p>
+                                    <p class="text-center my-1"><span>14 minutes ago</span></p>
+                                </div>
+
+                            </div>
+                            <div>
+                                <div class="card bg-gray">
+                                    <h3 class="text-center mt-3 mb-0">Twitter Posts</h3>
+                                    <hr class="mx-auto" />
+                                    <p class="text-center mt-1">To take a trivial example, which of us ever undertakes
+                                        laborious physical exercise, some advantage from it? </p>
+                                    <p class="text-center my-1"><span>14 minutes ago</span></p>
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+                        <h3 class="text-center">Follow Us</h3>
+                        <hr class="mx-auto" />
+                        <nav class="nav nav-fill mx-auto mb-5">
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                                        class="fab fa-facebook-f"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://twitter.com/fh5co" target="_blank"><i
+                                        class="fab fa-twitter"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#"><i class="fas fa-rss"></i></a>
+                            </li>
+                        </nav>
+
+                        <h3 class="text-center">Instagram</h3>
+                        <hr class="mx-auto" />
+                        <div class="row insta-links mt-2">
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="assets/images/insta1.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="assets/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="assets/images/insta2.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="assets/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="assets/images/insta3.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="assets/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="assets/images/insta4.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="assets/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="assets/images/insta5.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="assets/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-6 col-6">
+                                <div class="card">
+                                    <img class="card-img w-100" src="assets/images/insta6.png" alt="">
+                                    <div class="card-img-overlay d-flex justify-content-center align-items-center">
+                                        <a href="#"><img src="assets/images/right-icon.png" alt=""></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <h3 class="text-center mt-5">Trending Posts</h3>
+                        <hr class="mx-auto" />
+                        <div class="tranding-posts mt-4">
+                            <div class="media my-3">
+                                <div class="d-flex align-items-center justify-content-center"><a href="#"><img
+                                            src="assets/images/t-post1.png" alt=""></a></div>
+                                <div
+                                    class="media-body text-center d-flex align-items-center justify-content-center flex-column px-3">
+                                    <a href="#">The latest trends
+                                        in Travel</a>
+                                    <p class="mt-1">08 Jan 2019</p>
+                                </div>
+                            </div>
+                            <div class="media my-3">
+                                <div class="d-flex align-items-center justify-content-center"><a href="#"><img
+                                            src="assets/images/t-post2.png" alt=""></a></div>
+                                <div
+                                    class="media-body text-center d-flex align-items-center justify-content-center flex-column px-3">
+                                    <a href="#">Effective fine art
+                                        design</a>
+                                    <p class="mt-1">08 Jan 2019</p>
+                                </div>
+                            </div>
+                            <div class="media my-3">
+                                <div class="d-flex align-items-center justify-content-center"><a href="#"><img
+                                            src="assets/images/t-post3.png" alt=""></a></div>
+                                <div
+                                    class="media-body text-center d-flex align-items-center justify-content-center flex-column px-3">
+                                    <a href="#">How to design
+                                        your first PSD?</a>
+                                    <p class="mt-1">08 Jan 2019</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container-fluid jumbotron-fluid stay mt-5 pt-5 pb-5">
+        <h2 class="text-center">Stay Updated</h2>
+        <p class="text-center mt-2">Sign up for our newsletter to receive the latest news and event postings.</p>
+        <div class="input-group mt-4 mx-auto" style="max-width: 640px">
+            <input type="email" class="form-control" placeholder="YOUR EMAIL ADDRESS">
+            <div class="">
+                <button class="btn btn-success ml-2" type="submit">SIGN UP</button>
+            </div>
+        </div>
+    </div>
+
+    <footer class="container-fluid pt-5">
+        <div class="container">
+            <h2 class="logo text-center">Shahala</h2>
+            <nav class="nav nav-fill mx-auto mt-5">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/fh5co" target="_blank"><i
+                            class="fab fa-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-rss"></i></a>
+                </li>
+            </nav>
+        </div>
+        <div class="copy-right mt-4">
+            <p class="text-center">&copy; 2019 <a href="#" class="text-white">Shahala</a>. All Rights Reserved. Design
+                by <a href="https://freehtml5.co/shahala" target="_blank" class="text-white">FreeHTML5.co</a>.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/popper.min.js"></script>
+    <script src="assets/js/jquery-1.12.0.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/owl.carousel.min.js"></script>
+    <script src="assets/js/article.js"></script>
+
+    
+
+</body>
+
+</html>
